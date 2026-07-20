@@ -83,7 +83,7 @@ Before cloning or applying these configurations, ensure your system has the foll
 ### Scripts & Helper Utilities
 *   **bash** - Required by the fastfetch random image cycle script.
 *   **fisher** - Fish shell plugin manager (to download shell modules).
-*   **imagemagick** - Required for visual preview processing scripts.
+*   **imagemagick** (Optional) - Helper utility for visual preview processing scripts.
 
 ---
 
@@ -104,34 +104,24 @@ Before cloning or applying these configurations, ensure your system has the foll
 ## Component Overview
 
 ### Kitty Terminal
-*   **Transparency & Blur:** Custom `background_opacity 0.70` and `background_blur 128`.
-*   **Border Glow:** Mapped active purple highlights (`#c084fc`) and dark inactive borders (`#3b1f4a`).
-*   **GPU Images:** Employs the Kitty graphics `icat` protocol to draw images inside the terminal.
-*   **Window Rules:** Hides OS close/minimize decorations for a borderless aesthetic.
+*   **Styles:** Opacity 0.70, blur 128, active purple borders (#c084fc), borderless window decorations.
+*   **Graphics:** Uses the Kitty icat protocol to print high-resolution inline terminal images.
 
 ### Fish Shell
-*   **Fastfetch Wrapper:** Intercepts `fastfetch` command to resize terminal font and insert custom avatars.
-*   **Slide Randomizer:** Runs a background bash script to grab a shuffled image on every execution.
-*   **Fisher Plugins:** Integrated plugin list configured in `fish_plugins`.
+*   **Fastfetch Wrapper:** Shuffles, loads, and displays dynamic avatar graphic logos on shell init.
+*   **Plugins:** Shell modules configured and managed via `fisher`.
 
 ### VS Code
-*   **Colorscheme:** Custom Lunar Pink interface coloring configuration.
-*   **Telemetry:** Disabled Microsoft telemetry and spelling diagnostics.
-*   **Windowing:** Mapped custom native titlebars and profiles.
+*   **Theme & Window:** Lunar Pink workbench custom styling with native titlebars and disabled telemetry.
 
 ### Limine Bootloader
-*   **Theme:** Custom bootloader menu layout showing boot options.
-*   **Background:** Custom background image `lain.png` loaded directly from `/boot/lain.png`.
-*   **Behavior:** Set timeout durations and default OS selection rules.
+*   **Interface:** Configures boot menus, OS selections, and custom background image rendering.
 
 ### Zen Browser & Lock Screen
-*   **Zen Styles:** Full translucent browser background utilizing `userChrome.css` rules.
-*   **Lock Screen:** Background video integration configured in KDE settings.
-*   **Inspirations:** Followed the styling and configuration guides from the [agridyne/dotfiles-dt](https://github.com/agridyne/dotfiles-dt) repository.
+*   **Visuals:** Full transparency chrome rules and dynamic lock screen video backgrounds, configured referencing [agridyne/dotfiles-dt](https://github.com/agridyne/dotfiles-dt).
 
 ### Keyd & Micro Editor
-*   **Keyd Mappings:** Mapped selective screen capturing to the Print Screen key globally.
-*   **Micro Editor:** Integrated Catppuccin Macchiato colorscheme for syntax highlighting.
+*   **Utilities:** Binds key events for screen capturing and sets Catppuccin Macchiato micro theme.
 
 ---
 
@@ -186,11 +176,7 @@ echo "$IMG"
 ```
 
 ### Limine Bootloader
-The system uses the Limine bootloader with a custom background image (`limine/lain.png`). Here is the bootloader layout:
-
-<p align="center">
-  <img src="assets/limine_showcase.jpg" alt="Limine Bootloader Showcase" width="100%" style="max-width: 100%; height: auto;"/>
-</p>
+The system boot sequence uses the Limine boot manager with a custom background image config (`limine/lain.png`). This bootloader theme is loaded directly by placing the background assets inside `/boot/lain.png` and linking it inside `/boot/limine.conf`.
 
 ---
 
