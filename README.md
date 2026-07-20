@@ -26,28 +26,26 @@ Personal CachyOS rice featuring KDE Plasma, Kitty, Fish, Fastfetch, Limine, and 
   <img src="assets/fastfetch_grid.png" alt="Split View Showcase" width="100%" style="max-width: 100%; height: auto;"/>
 </p>
 
-### VS Code Workspace Previews
-Previews of the editor showing different sections of configurations and theme palettes:
+### Development Workspace
+
+A glimpse of the editor, terminal, and project structure using the Wired CachyOS configuration.
+
 <p align="center">
-  <img src="assets/vscode_1.png" alt="VS Code Workspace View" width="100%" style="max-width: 100%; height: auto; margin-bottom: 10px;"/>
-</p>
-<p align="center">
-  <img src="assets/vscode_3.png" alt="VS Code Editor Code View" width="49%" style="max-width: 49%; height: auto; display: inline-block;"/>
-  <img src="assets/vscode_4.png" alt="VS Code Alternate View" width="49%" style="max-width: 49%; height: auto; display: inline-block;"/>
-</p>
-<p align="center">
-  <img src="assets/vscode_2.png" alt="VS Code Sidebar Layout" width="22%" style="max-width: 22%; height: auto;"/>
+  <img src="assets/vscode_1.png" width="900" alt="VS Code Settings">
 </p>
 
-### Limine Bootloader Preview
-The system boot manager interface featuring custom background artwork:
 <p align="center">
-  <img src="assets/limine_showcase.jpg" alt="Limine Bootloader Showcase" width="100%" style="max-width: 100%; height: auto;"/>
+  <img src="assets/vscode_3.png" width="440" alt="Fish Shell">
+  <img src="assets/vscode_4.png" width="440" alt="VS Code Editor">
+</p>
+
+<p align="center">
+  <img src="assets/vscode_2.png" width="220" alt="Project Explorer">
 </p>
 
 ---
 
-## Interactive Navigator
+## Navigator
 
 Select a destination node to jump directly to that section of the documentation:
 
@@ -118,6 +116,10 @@ Before cloning or applying these configurations, ensure your system has the foll
 
 ### Limine Bootloader
 *   **Interface:** Configures boot menus, OS selections, and custom background image rendering.
+
+<p align="center">
+  <img src="assets/BootLoader.png" width="900" alt="Limine Bootloader Showcase">
+</p>
 
 ### Zen Browser & Lock Screen
 *   **Visuals:** Full transparency chrome rules and dynamic lock screen video backgrounds, based on [agridyne/dotfiles-dt](https://github.com/agridyne/dotfiles-dt).
