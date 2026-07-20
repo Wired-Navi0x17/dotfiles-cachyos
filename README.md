@@ -30,17 +30,20 @@ Personal CachyOS rice featuring KDE Plasma, Kitty, Fish, Fastfetch, Limine, and 
 
 A glimpse of the editor, terminal, and project structure using the Wired CachyOS configuration.
 
-<p align="center">
+<p align="left">
   <img src="assets/vscode_1.png" width="900" alt="VS Code Settings">
+</p>
+
+<p align="left">
+    <img src="assets/vscode_2.png" width="220" alt="Project Explorer">
+  <img src="assets/vscode_4.png" width="440" alt="VS Code Editor">
+
+ 
+
 </p>
 
 <p align="center">
   <img src="assets/vscode_3.png" width="440" alt="Fish Shell">
-  <img src="assets/vscode_4.png" width="440" alt="VS Code Editor">
-</p>
-
-<p align="center">
-  <img src="assets/vscode_2.png" width="220" alt="Project Explorer">
 </p>
 
 ---
