@@ -1,12 +1,14 @@
 # dotfiles-cachyos
 
 <p align="center">
-  <img src="assets/fastfetch_grid.png" alt="Fastfetch Grid Showcase" width="100%"/>
+  <strong>Split View (Four terminal instances showcasing dynamic avatars)</strong><br>
+  <img src="assets/fastfetch_grid.png" alt="Split View Showcase" width="100%"/>
 </p>
 
 <p align="center">
-  <img src="assets/terminal_preview_1.png" alt="Terminal Preview 1" width="49%"/>
-  <img src="assets/terminal_preview_2.png" alt="Terminal Preview 2" width="49%"/>
+  <strong>Individual Views (Detailed terminal configurations)</strong><br>
+  <img src="assets/terminal_preview_1.png" alt="Individual View 1" width="49%"/>
+  <img src="assets/terminal_preview_2.png" alt="Individual View 2" width="49%"/>
 </p>
 
 ---
@@ -98,7 +100,7 @@ This protocol is utilized by the custom `fastfetch` command wrapper in Fish shel
 > **Copyright Disclaimer:** All image assets bundled inside this repository belong to their respective creators/artists and are included strictly for personal workspace aesthetic demonstrations. No copyright infringement is intended. If you are the owner of any asset and want it removed, please submit an issue or contact the repository owner.
 
 ### Dynamic Image fastfetch Logo
-Whenever `fastfetch` is run, the custom wrapper function in Fish shell runs a bash script to cycle images:
+Whenever `fastfetch` is run (or a new Kitty terminal window is opened), the custom wrapper function in Fish shell runs a bash script to cycle images:
 ```fish
 function fastfetch
     set img (~/.config/fastfetch/random_lain.sh)
@@ -106,6 +108,28 @@ function fastfetch
     command fastfetch --logo-type kitty-icat --logo $img $argv
     kitten @ set-font-size 14
 end
+```
+
+The underlying bash script (`fastfetch/random_lain.sh`) rotates the images in a queue to ensure a new image displays on every execution:
+```bash
+#!/bin/bash
+
+DIR="$HOME/.config/fastfetch/lain"
+QUEUE="$HOME/.cache/lain_queue"
+
+mkdir -p "$HOME/.cache"
+
+if [ ! -s "$QUEUE" ]; then
+    find "$DIR" -maxdepth 1 -type f \
+        \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.webp" \) \
+        | shuf > "$QUEUE"
+fi
+
+IMG=$(head -n1 "$QUEUE")
+tail -n +2 "$QUEUE" > "$QUEUE.tmp"
+mv "$QUEUE.tmp" "$QUEUE"
+
+echo "$IMG"
 ```
 The randomizer relies on a cached local queue (~/.cache/lain_queue) to ensure every image from the fastfetch/lain/ directory is shown once before repeating.
 
