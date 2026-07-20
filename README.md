@@ -7,6 +7,8 @@
 [![Kitty](https://img.shields.io/badge/Kitty-FC7E0F?style=flat-square)](https://sw.kovidgoyal.net/kitty/)
 [![Limine](https://img.shields.io/badge/Limine-111111?style=flat-square)](https://github.com/Limine-Bootloader/Limine)
 
+Personal CachyOS rice featuring KDE Plasma, Kitty, Fish, Fastfetch, Limine, and a custom Lunar Pink VS Code theme.
+
 ---
 
 ## Showcase
@@ -34,7 +36,7 @@ Previews of the editor showing different sections of configurations and theme pa
   <img src="assets/vscode_4.png" alt="VS Code Alternate View" width="49%" style="max-width: 49%; height: auto; display: inline-block;"/>
 </p>
 <p align="center">
-  <img src="assets/vscode_2.png" alt="VS Code Sidebar Layout" width="30%" style="max-width: 30%; height: auto;"/>
+  <img src="assets/vscode_2.png" alt="VS Code Sidebar Layout" width="22%" style="max-width: 22%; height: auto;"/>
 </p>
 
 ### Limine Bootloader Preview
@@ -92,8 +94,8 @@ Before cloning or applying these configurations, ensure your system has the foll
 | Component | Key Feature | Configuration Path |
 | :--- | :--- | :--- |
 | **Kitty** | Transparent background, border glow, GPU image support | `kitty/kitty.conf` |
-| **Fish** | Fastfetch wrapper and random image slide | `fish/config.fish` |
-| **VS Code** | Custom Lunar Pink theme and telemetry disables | `vscode/settings.json` |
+| **Fish** | Fastfetch wrapper and random image rotation | `fish/config.fish` |
+| **VS Code** | Custom Lunar Pink theme and telemetry disabled | `vscode/settings.json` |
 | **Limine** | Custom boot background image rendering | `limine/limine.conf` |
 | **Zen Browser** | Full transparency and background blur styling | `zen/userChrome.css` |
 | **Keyd** | Hardware-level Print Screen capture remapping | `keyd/default.conf` |
@@ -118,7 +120,7 @@ Before cloning or applying these configurations, ensure your system has the foll
 *   **Interface:** Configures boot menus, OS selections, and custom background image rendering.
 
 ### Zen Browser & Lock Screen
-*   **Visuals:** Full transparency chrome rules and dynamic lock screen video backgrounds, configured referencing [agridyne/dotfiles-dt](https://github.com/agridyne/dotfiles-dt).
+*   **Visuals:** Full transparency chrome rules and dynamic lock screen video backgrounds, based on [agridyne/dotfiles-dt](https://github.com/agridyne/dotfiles-dt).
 
 ### Keyd & Micro Editor
 *   **Utilities:** Binds key events for screen capturing and sets Catppuccin Macchiato micro theme.
