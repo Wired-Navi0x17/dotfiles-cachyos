@@ -1,4 +1,13 @@
-# 🌐 dotfiles-cachyos — *Lain Wired Edition*
+# 🌐 dotfiles-cachyos
+
+<p align="center">
+  <img src="assets/fastfetch_grid.png" alt="Fastfetch Grid Showcase" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="assets/terminal_preview_1.png" alt="Terminal Preview 1" width="49%"/>
+  <img src="assets/terminal_preview_2.png" alt="Terminal Preview 2" width="49%"/>
+</p>
 
 ---
 
