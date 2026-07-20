@@ -1,0 +1,200 @@
+{
+    "workbench.colorCustomizations": {
+        "[Lunar Pink]": {
+            "editor.background": "#06030A",
+            "editorGutter.background": "#06030A",
+            "editorLineNumber.background": "#06030A",
+            "editorLineNumber.foreground": "#8A7AA4",
+            "editorLineNumber.activeForeground": "#ff79c6",
+
+            "sideBar.background": "#090510",
+            "sideBarSectionHeader.background": "#090510",
+            "activityBar.background": "#090510",
+            "titleBar.activeBackground": "#090510",
+            "titleBar.inactiveBackground": "#090510",
+            "statusBar.background": "#090510",
+            "panel.background": "#090510",
+            "terminal.background": "#06030A",
+
+            "tab.activeBackground": "#090510",
+            "tab.inactiveBackground": "#06030A",
+            "tab.activeBorderTop": "#ff79c6",
+
+            "editorGroupHeader.tabsBackground": "#090510",
+            "editorGroupHeader.noTabsBackground": "#090510",
+
+            "editorWidget.background": "#11081A",
+            "editorHoverWidget.background": "#11081A",
+            "editorSuggestWidget.background": "#11081A",
+            "dropdown.background": "#11081A",
+            "menu.background": "#11081A",
+
+            "editorSuggestWidget.selectedBackground": "#241336",
+
+            "breadcrumb.background": "#090510",
+            "editorStickyScroll.background": "#06030A",
+
+            "editor.lineHighlightBackground": "#1A1025",
+
+            "editor.selectionBackground": "#ff79c640",
+
+            "editorBracketMatch.background": "#ff79c625",
+            "editorBracketMatch.border": "#ff79c6",
+
+            "editorIndentGuide.background1": "#2A1938",
+            "editorIndentGuide.activeBackground1": "#ff79c655",
+
+            "list.activeSelectionBackground": "#241336",
+            "list.inactiveSelectionBackground": "#1A1025",
+            "list.hoverBackground": "#241336",
+
+            "scrollbar.shadow": "#06030A",
+            "scrollbarSlider.background": "#7A4FA444",
+            "scrollbarSlider.hoverBackground": "#A463D866",
+            "scrollbarSlider.activeBackground": "#ff79c688",
+
+            "editor.findMatchBackground": "#ff79c655",
+            "editor.findMatchHighlightBackground": "#ff79c622",
+
+            "peekViewEditor.background": "#11081A",
+            "peekViewResult.background": "#090510",
+
+            "minimap.background": "#06030A",
+        },
+    },
+    "editor.tokenColorCustomizations": {
+        "[Lunar Pink]": {
+            "textMateRules": [
+                {
+                    "scope": "comment",
+                    "settings": {
+                        "foreground": "#A07BC5",
+                        "fontStyle": "italic",
+                    },
+                },
+            ],
+        },
+    },
+
+    "workbench.colorTheme": "Lunar Pink",
+    "workbench.iconTheme": "catppuccin-mocha",
+
+    "chat.disableAIFeatures": true,
+    "redhat.telemetry.enabled": false,
+
+    "editor.fontSize": 16,
+    "editor.wordWrap": "on",
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.overtypeCursorStyle": "line",
+
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+
+    "editor.guides.indentation": false,
+    "editor.guides.bracketPairs": true,
+
+    "editor.renderLineHighlight": "all",
+
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.showExecutionMessage": false,
+
+    "code-runner.executorMap": {
+        "java": "cd \"$workspaceRoot\" && mkdir -p bin && javac -d bin \"$fileName\" && java -cp bin \"$fileNameWithoutExt\" < input.txt > output.txt && cat output.txt",
+    },
+
+    "prettier.printWidth": 100,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "prettier.singleQuote": true,
+    "prettier.semi": true,
+    "prettier.trailingComma": "es5",
+    "prettier.bracketSpacing": true,
+    "prettier.arrowParens": "always",
+    "prettier.endOfLine": "lf",
+
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java",
+    },
+
+    "files.autoSave": "afterDelay",
+
+    "java.project.outputPath": "bin",
+
+    "explorer.confirmDragAndDrop": false,
+    "explorer.sortOrder": "type",
+
+    "workbench.editorAssociations": {
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.ui": "default",
+        "*.qrc": "qt-core.qrcEditor",
+    },
+
+    "qt-core.additionalQtPaths": [
+        {
+            "name": "Qt-5.15.19-linux-g++-x86_64_from_PATH",
+            "path": "/usr/bin/qmake",
+        },
+    ],
+
+    "security.workspace.trust.untrustedFiles": "open",
+
+    "window.titleBarStyle": "native",
+
+    "liveServer.settings.donotShowInfoMsg": true,
+    "window.newWindowProfile": "Lunar Pink.",
+}

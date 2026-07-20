@@ -1,0 +1,25 @@
+:root {
+    --toolbar-bgcolor: transparent !important;
+    --lwt-accent-color: transparent !important;
+}
+
+#main-window,
+#navigator-toolbox,
+#browser,
+#appcontent,
+#tabbrowser-tabbox,
+#tabbrowser-tabpanels,
+browser {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.tabbrowser-tab,
+#TabsToolbar,
+#nav-bar,
+#PersonalToolbar {
+    background: transparent !important;
+}
+body {
+    background: transparent !important;
+}
